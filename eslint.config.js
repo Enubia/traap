@@ -13,6 +13,7 @@ export default antfu({
         curly: ['error', 'all'],
         'import/order': 'off',
         'unused-imports/no-unused-imports': 'warn',
+        'style/max-len': ['error', { code: 120 }],
         'perfectionist/sort-imports': [
             'error',
             {

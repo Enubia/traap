@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
+import Shell from './components/Shell';
 import theme from './utils/theme';
 
 import '@mantine/core/styles.css';
@@ -24,7 +25,9 @@ export default function RootLayout({
             </head>
             <body>
                 <MantineProvider theme={theme}>
-                    {children}
+                    <Shell>
+                        {children}
+                    </Shell>
                 </MantineProvider>
             </body>
         </html>
